@@ -52,7 +52,18 @@ function playRound(humanChoice, computerChoice) {
     console.log(`Score: ${humanScore} - ${computerScore}`)
 }
 
-let humanSelection = getHumanChoice();
-let computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+function playGame() {
+    for (let i = 1; i <= 5; i++) {
+        let humanSelection = getHumanChoice();
+        let computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection);
+    }
+    if (humanScore > computerScore) {
+        console.log("YOU WIN!!!")
+    } else {
+        console.log("Better luck next time...")
+    }
+}
+
+playGame()
