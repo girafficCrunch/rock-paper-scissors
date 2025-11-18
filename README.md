@@ -1,2 +1,3 @@
 # rock-paper-scissors
-The Odin Project
+An assignment from The Odin Project
+Must be played in browser console.
